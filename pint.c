@@ -12,7 +12,7 @@ void pint(stack_t **topptr, int *err_flag)
 {
 	if (topptr == NULL)
 	{
-	*err_flag = 49;
+	*err_flag = 1;
 	return;
 	}
 	printf("%d\n", temp->n);
