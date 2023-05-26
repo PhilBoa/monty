@@ -1,4 +1,4 @@
-#include"monty.h"
+#include "monty.h"
 
 /**
  * pint - print function
@@ -10,7 +10,10 @@
 
 void pint(stack_t **topptr, int *err_flag)
 {
-	if (topptr == NULL)
+	stack_t *temp
+	
+	temp = *topptr;
+	if (temp == NULL)
 	{
 	*err_flag = 1;
 	return;
